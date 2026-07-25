@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Titulo -->
-    <title>4º Congreso Internacional de Biotecnología 2026 | Bolivia</title>
+    <title>4º Congreso Internacional de Biotecnología 2026</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -36,6 +36,7 @@
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
                     <a href="#nosotros" onclick="navigateToSection('nosotros')" class="nav-link text-[#1F2937]">Quiénes somos</a>
+                    <a href="#trabajo" onclick="navigateToSection('trabajo')" class="nav-link text-[#1F2937]">Qué hacemos</a>
                     <a href="#areas" onclick="navigateToSection('areas')" class="nav-link text-[#1F2937]">Áreas temáticas</a>
                     <a href="#ponentes" onclick="navigateToSection('ponentes')" class="nav-link text-[#1F2937]">Ponentes</a>
                     <a href="#programa" onclick="navigateToSection('programa')" class="nav-link text-[#1F2937]">Programa</a>
@@ -44,14 +45,14 @@
 
                 <!-- Botones lado derecho -->
                 <div class="flex items-center gap-x-3">
-                    <!-- Botón Registrarse (más pequeño en móvil) -->
+                    <!-- Botón Registrarse Oculto en Móvil -->
                     <button onclick="window.location.href='#registro'" 
                             class="hidden sm:flex px-5 py-2.5 bg-[#0A3D4A] hover:bg-[#1F2937] text-white text-sm font-semibold rounded-2xl transition-all items-center gap-x-2">
                         <i class="fa-solid fa-ticket"></i>
                         <span>Registrarse</span>
                     </button>
 
-                    <!-- Hamburger Menu -->
+                    <!-- Menú hamburguesa -->
                     <button onclick="toggleMobileMenu()" 
                             class="md:hidden w-10 h-10 flex items-center justify-center text-2xl text-[#0A3D4A]">
                         <i class="fa-solid fa-bars"></i>
@@ -64,6 +65,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-8 py-8 flex flex-col gap-y-6 text-lg">
                 <a href="#nosotros" onclick="navigateToSection('nosotros');toggleMobileMenu()" class="nav-link">Quienes somos</a>
+                <a href="#trabajo" onclick="navigateToSection('trabajo');toggleMobileMenu()" class="nav-link">Qué hacemos</a>
                 <a href="#areas" onclick="navigateToSection('areas');toggleMobileMenu()" class="nav-link">Áreas temáticas</a>
                 <a href="#ponentes" onclick="navigateToSection('ponentes');toggleMobileMenu()" class="nav-link">Ponentes</a>
                 <a href="#programa" onclick="navigateToSection('programa');toggleMobileMenu()" class="nav-link">Programa</a>
@@ -163,7 +165,7 @@
 
     </header>
 
-    <!-- SOBRE EL CONGRESO -->
+    <!-- SOBRE NOSOTROS -->
     <section id="nosotros" class="py-12 md:py-16 lg:py-20 px-0 lg:px-8 bg-white">
 
         <div class="max-w-screen-2xl mx-auto px-8">
@@ -179,12 +181,16 @@
                     <div class="h-px w-20 bg-gradient-to-r from-[#00B4A6] to-transparent"></div>
 
                     <div class="max-w-xl pt-5 xl:hidden">
-                        <p class="text-lg leading-relaxed text-[#374151]">
-                            El Congreso Internacional de Biotecnología (CIB 2026) es uno de los eventos científicos más importantes
-                            de Bolivia y la región andina en ciencia de la vida. Reunimos investigadores, empresarios, policymakers y estudiantes para discutir el rol estratégico y 
-                            fundamental de la biotecnología en la solución de los grandes desafíos de América Latina. 
+                        <p class="text-lg mb-5 leading-relaxed text-[#374151]">
+                            Bolivia Innova es una plataforma que impulsa la bioinnovación en Bolivia. Organizamos el Congreso Internacional de 
+                            Biotecnología, conectamos investigadores, emprendedores y tomadores de decisiones, y fomentamos soluciones basadas 
+                            en nuestra megadiversidad.
                         </p>
-                
+                        <p class="text-lg leading-relaxed text-[#374151]">
+                            El Congreso Internacional de Biotecnología (CIB 2026) es uno de los eventos científicos más importantes de Bolivia 
+                            y la región andina en ciencia de la vida. Reunimos investigadores, empresarios, policymakers y estudiantes para 
+                            discutir el rol estratégico y fundamental de la biotecnología en la solución de los grandes desafíos de América Latina.
+                        </p>
                         <div class="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-12 md:mt-16">
                             <div class="text-center">
                                 <div class="text-3xl sm:text-4xl font-mono font-semibold text-[#00B4A6] leading-none whitespace-nowrap">15-20</div>
@@ -206,10 +212,15 @@
             </div>
                 
                 <div class="md:col-span-7 max-w-xl hidden xl:block">
+                    <p class="text-lg mb-5 leading-relaxed text-[#374151]">
+                        Bolivia Innova es una plataforma que impulsa la bioinnovación en Bolivia. Organizamos el Congreso Internacional de 
+                        Biotecnología, conectamos investigadores, emprendedores y tomadores de decisiones, y fomentamos soluciones basadas 
+                        en nuestra megadiversidad.
+                    </p>
                     <p class="text-lg leading-relaxed text-[#374151]">
-                        El Congreso Internacional de Biotecnología (CIB 2026) es uno de los eventos científicos más importantes
-                        de Bolivia y la región andina en ciencia de la vida. Reunimos investigadores, empresarios, policymakers y estudiantes para discutir el rol estratégico y 
-                        fundamental de la biotecnología en la solución de los grandes desafíos de América Latina. 
+                        El Congreso Internacional de Biotecnología (CIB 2026) es uno de los eventos científicos más importantes de Bolivia 
+                        y la región andina en ciencia de la vida. Reunimos investigadores, empresarios, policymakers y estudiantes para 
+                        discutir el rol estratégico y fundamental de la biotecnología en la solución de los grandes desafíos de América Latina.
                     </p>
             
                     <div class="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-12 md:mt-16">
@@ -229,6 +240,90 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- QUÉ HACEMOS -->
+    <section id="trabajo" class="py-16 md:py-24 bg-white">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="grid md:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Columna izquierda - Título -->
+                <div class="md:col-span-5">
+                    <div class="sticky top-28 flex flex-col items-start">
+                        <span class="inline-block px-4 py-1 bg-[#F0EDE4] text-[#0A3D4A] text-xs tracking-widest font-medium rounded-3xl">BOLIVIA INNOVA</span>
+                        <h2 class="heading-font text-5xl md:text-6xl font-bold leading-none mt-6 mb-8 text-[#0A3D4A]">
+                            Qué hacemos
+                        </h2>
+                        <div class="h-px w-20 bg-gradient-to-r from-[#00B4A6] to-transparent"></div>
+                    </div>
+                </div>
+
+                <!-- Columna derecha - Texto -->
+                <div class="md:col-span-7 max-w-2xl space-y-6">
+                    <p class="text-lg leading-relaxed text-[#374151]">
+                        Nuestro trabajo va más allá de la organización del Congreso Internacional de Biotecnología en Bolivia:
+                    </p>
+                    <ul class="space-y-4 text-lg leading-relaxed text-[#374151]">
+                        <li class="flex items-start gap-3">
+                            <span class="inline-block mt-2.5 h-1.5 w-1.5 rounded-full bg-[#00B4A6] shrink-0"></span>
+                            <span>
+                                Somos <b>creadores de espacios de alto nivel para el intercambio científico</b>, donde la biodiversidad boliviana se encuentra con la vanguardia tecnológica global.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <span class="inline-block mt-2.5 h-1.5 w-1.5 rounded-full bg-[#00B4A6] shrink-0"></span>
+                            <span>
+                                <b>Generamos espacios de discusión para alimentar la educación económica</b> y la relación entre biotecnología y desarrollo sostenible para transformar el conocimiento en impacto real.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <span class="inline-block mt-2.5 h-1.5 w-1.5 rounded-full bg-[#00B4A6] shrink-0"></span>
+                            <span>
+                                <b>Construimos puentes entre academia, sector privado y gobierno</b> para posicionar a Bolivia en la bioeconomía latinoamericana.
+                            </span>
+                        </li>
+                    </ul>                  
+                </div>
+                
+            </div>
+        
+            <!-- Cuadros temáticos -->
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mt-20">
+                <!-- Card 1 -->
+                <div class="group items-center sm:items-start text-center sm:text-left">
+                    <div class="text-5xl mb-4 transition-transform group-hover:scale-110 inline-block">🌿</div>
+                    <h3 class="text-2xl font-semibold heading-font mb-3">Congresos y Encuentros</h3>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="group items-center sm:items-start text-center sm:text-left">
+                    <div class="text-[#0A3D4A] text-5xl mb-4 transition-transform group-hover:scale-110 inline-block">🔬</div>
+                    <h3 class="text-2xl font-semibold heading-font mb-3">Impulso a la Investigación</h3>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="group items-center sm:items-start text-center sm:text-left">
+                    <div class="text-5xl mb-4 transition-transform group-hover:scale-110 inline-block">💼</div>
+                    <h3 class="text-2xl font-semibold heading-font mb-3">Apoyo al emprendimiento</h3>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="group items-center sm:items-start text-center sm:text-left">
+                    <div class="text-5xl mb-4 transition-transform group-hover:scale-110 inline-block">🌎</div>
+                    <h3 class="text-2xl font-semibold heading-font mb-3">Conexión Regional</h3>
+                </div>
+            </div>
+
+            <!-- Cita inferior -->
+            <div class="mt-16 pt-8 border-t border-[#E5D9C8]">
+                <p class="italic text-[#64748B] text-center md:text-left">
+                    “La verdadera innovación nace cuando la ciencia antigua se encuentra con las preguntas del futuro.”
+                </p>
             </div>
         </div>
     </section>
@@ -332,7 +427,7 @@
                 </table>
                 
                 <div class="mt-12 text-center">
-                    <button onclick="window.location.href='https://form.jotform.com/261906962913061'" 
+                    <button onclick="window.location.href='./pages/enrollment.html'" 
                             class="bg-gradient-to-r from-[#D4A017] to-amber-500 hover:from-amber-400 hover:to-yellow-400 text-[#0A3D4A] px-16 py-6 rounded-3xl text-xl font-semibold transition-all">
                         Completar Registro
                     </button>
@@ -402,6 +497,7 @@
                     <div class="uppercase text-xs tracking-widest mb-6 text-white/60">Navegación</div>
                     <div class="space-y-3 text-sm">
                         <a href="#nosotros" class="block hover:text-[#00B4A6]">Quienes somos</a>
+                        <a href="#trabajo" class="block hover:text-[#00B4A6]">Qué hacemos</a>
                         <a href="#areas" class="block hover:text-[#00B4A6]">Áreas temáticas</a>
                         <a href="#ponentes" class="block hover:text-[#00B4A6]">Ponentes</a>
                         <a href="#programa" class="block hover:text-[#00B4A6]">Programa</a>
