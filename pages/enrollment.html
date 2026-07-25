@@ -43,6 +43,60 @@
         </div>
     </nav>
 
+
+    <!-- NAVBAR -->
+    <nav class="bg-white/95 backdrop-blur-md border-b border-[#E5D9C8] fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+                
+                <!-- Logo -->
+                <div class="flex items-center gap-x-2">
+                    <div>
+                        <a href="https://boliviainnova.com" class="heading-font text-2xl sm:text-3xl font-bold tracking-tighter text-[#0A3D4A]">BOLIVIA</a>
+                        <a href="https://boliviainnova.com" class="heading-font text-2xl sm:text-3xl font-bold tracking-tighter text-[#00B4A6]">INNOVA</a>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="https://boliviainnova.com/#nosotros" onclick="navigateToSection('nosotros')" class="nav-link text-[#1F2937]">Quiénes somos</a>
+                    <a href="https://boliviainnova.com/#areas" onclick="navigateToSection('areas')" class="nav-link text-[#1F2937]">Áreas temáticas</a>
+                    <a href="https://boliviainnova.com/#ponentes" onclick="navigateToSection('ponentes')" class="nav-link text-[#1F2937]">Ponentes</a>
+                    <a href="https://boliviainnova.com/#programa" onclick="navigateToSection('programa')" class="nav-link text-[#1F2937]">Programa</a>
+                    <a href="https://boliviainnova.com/#registro" onclick="navigateToSection('registro')" class="nav-link text-[#1F2937]">Registro</a>
+                </div>
+
+                <!-- Botones lado derecho -->
+                <div class="flex items-center gap-x-3">
+                    <!-- Botón Registrarse (más pequeño en móvil) -->
+                    <button onclick="window.location.href='https://boliviainnova.com/#registro'" 
+                            class="hidden sm:flex px-5 py-2.5 bg-[#0A3D4A] hover:bg-[#1F2937] text-white text-sm font-semibold rounded-2xl transition-all items-center gap-x-2">
+                        <i class="fa-solid fa-ticket"></i>
+                        <span>Registrarse</span>
+                    </button>
+
+                    <!-- Hamburger Menu -->
+                    <button onclick="toggleMobileMenu()" 
+                            class="md:hidden w-10 h-10 flex items-center justify-center text-2xl text-[#0A3D4A]">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-8 py-8 flex flex-col gap-y-6 text-lg">
+                <a href="#nosotros" onclick="navigateToSection('nosotros');toggleMobileMenu()" class="nav-link">Quienes somos</a>
+                <a href="#areas" onclick="navigateToSection('areas');toggleMobileMenu()" class="nav-link">Áreas temáticas</a>
+                <a href="#ponentes" onclick="navigateToSection('ponentes');toggleMobileMenu()" class="nav-link">Ponentes</a>
+                <a href="#programa" onclick="navigateToSection('programa');toggleMobileMenu()" class="nav-link">Programa</a>
+                <a href="#registro" onclick="navigateToSection('registro');toggleMobileMenu()" class="nav-link">Registro</a>
+            </div>
+        </div>
+    </nav>
+
+
     <!-- HEADER -->
     <header class="pt-32 pb-12 bg-[#0A3D4A] text-white">
         <div class="max-w-screen-2xl mx-auto px-6 md:px-8">
