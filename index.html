@@ -38,8 +38,8 @@
                     <a href="#nosotros" onclick="navigateToSection('nosotros')" class="nav-link text-[#1F2937]">Quiénes somos</a>
                     <a href="#trabajo" onclick="navigateToSection('trabajo')" class="nav-link text-[#1F2937]">Qué hacemos</a>
                     <a href="#areas" onclick="navigateToSection('areas')" class="nav-link text-[#1F2937]">Áreas temáticas</a>
-                    <a href="#ponentes" onclick="navigateToSection('ponentes')" class="nav-link text-[#1F2937]">Ponentes</a>
-                    <a href="#programa" onclick="navigateToSection('programa')" class="nav-link text-[#1F2937]">Programa</a>
+                    <a href="#ponentes" onclick="navigateToSection('ponentes')" class="nav-link text-[#1F2937] hidden">Ponentes</a>
+                    <a href="#programa" onclick="navigateToSection('programa')" class="nav-link text-[#1F2937] hidden">Programa</a>
                     <a href="#registro" onclick="navigateToSection('registro')" class="nav-link text-[#1F2937]">Registro</a>
                 </div>
 
@@ -67,8 +67,8 @@
                 <a href="#nosotros" onclick="navigateToSection('nosotros');toggleMobileMenu()" class="nav-link">Quienes somos</a>
                 <a href="#trabajo" onclick="navigateToSection('trabajo');toggleMobileMenu()" class="nav-link">Qué hacemos</a>
                 <a href="#areas" onclick="navigateToSection('areas');toggleMobileMenu()" class="nav-link">Áreas temáticas</a>
-                <a href="#ponentes" onclick="navigateToSection('ponentes');toggleMobileMenu()" class="nav-link">Ponentes</a>
-                <a href="#programa" onclick="navigateToSection('programa');toggleMobileMenu()" class="nav-link">Programa</a>
+                <a href="#ponentes" onclick="navigateToSection('ponentes');toggleMobileMenu()" class="nav-link hidden">Ponentes</a>
+                <a href="#programa" onclick="navigateToSection('programa');toggleMobileMenu()" class="nav-link hidden">Programa</a>
                 <a href="#registro" onclick="navigateToSection('registro');toggleMobileMenu()" class="nav-link">Registro</a>
             </div>
         </div>
@@ -343,7 +343,7 @@
     </section>
 
     <!-- PONENTES -->
-    <section id="ponentes" class="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#F8F5F0]">
+    <section id="ponentes" class="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#F8F5F0] hidden">
         <div class="max-w-screen-2xl mx-auto px-8">
             <div class="flex flex-col md:flex-row md:justify-between md:items-end gap-4 md:gap-0 mb-16">
                 <div>
@@ -370,7 +370,7 @@
     
 
     <!-- PROGRAMA -->
-    <section id="programa" class="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="programa" class="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white hidden">
         <div class="max-w-screen-2xl mx-auto px-8">
             <div class="max-w-xl mx-auto text-center mb-16">
                 <h2 class="heading-font text-4xl sm:text-6xl md:text-7xl font-bold mb-4">Programa Científico</h2>
@@ -386,49 +386,44 @@
     </section>
 
     <!-- REGISTRO -->
-    <section id="registro" class="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#0A3D4A] text-white">
-        <div class="max-w-screen-2xl mx-auto px-8">
+    <section id="registro" class="py-12 md:py-16 lg:py-20 px-2 sm:px-6 lg:px-8 bg-[#0A3D4A] text-white">
+        <div class="max-w-screen-2xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center mb-12">
                 <h2 class="heading-font text-4xl sm:text-5xl md:text-6xl font-bold leading-none">Inscripciones Abiertas</h2>
-                <p class="text-xl text-white/80 mt-4">Descuento 20% Early Bird hasta el 30 de septiembre 2026</p>
+                <p class="text-xl text-white/80 mt-4">Descuento <span class="text-[#D4A017] font-bold">20% Early Bird</span> hasta el 30 de septiembre 2026</p>
             </div>
             
-            <div class="max-w-4xl mx-auto bg-white/10 backdrop-blur-xl rounded-3xl p-10 md:p-12">
+            <div class="max-w-4xl mx-auto bg-white/10 backdrop-blur-xl rounded-3xl p-4 sm:p-6 md:p-12">
                 <table class="w-full">
                     <thead>
                         <tr class="border-b border-white/20">
-                            <th class="py-6 text-left font-normal text-white/70">Categoría</th>
-                            <th class="py-6 text-center font-normal text-white/70">Presencial</th>
-                            <th class="py-6 text-center font-normal text-white/70">Virtual</th>
+                            <th class="py-6 text-left font-bold">Categoría</th>
+                            <th class="py-6 text-right font-bold"><span class="hidden sm:inline">Valor con descuento </span><span class="sm:hidden">Descuento</span><br class="md:hidden">Early Bird</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-white/20"> 
                         <tr>
-                            <td class="py-7 font-medium">Profesionales</td>
-                            <td class="text-center">Bs. 350</td>
-                            <td class="text-center">Bs. 300</td>
+                            <td class="py-7 text-sm md:text-base font-medium text-white/90">Profesionales</td>
+                            <td class="text-sm md:text-base text-right sm:pr-7"><span class="line-through text-white/50">Bs. 350</span><span class="pl-3 sm:pl-5 font-bold text-[#D4A017]"><span class="hidden sm:inline">Bs. </span>280</span></td>
                         </tr>
                         <tr>
-                            <td class="py-7 font-medium">Estudiantes</td>
-                            <td class="text-center">Bs. 250</td>
-                            <td class="text-center">Bs. 150</td>
+                            <td class="py-7 text-sm md:text-base font-medium text-white/90">Profesionales <br class="sm:hidden"> (modalidad <span class="font-bold">virtual</span>)</td>
+                            <td class="text-sm md:text-base text-right sm:pr-7"><span class="line-through text-white/50">Bs. 250</span><span class="pl-3 sm:pl-5 font-bold text-[#D4A017]"><span class="hidden sm:inline">Bs. </span>200</span></td>
                         </tr>
-                        <tr class="bg-white/10">
-                            <td class="py-7 font-medium">Early Bird Profesionales (hasta 10/10/2026)</td>
-                            <td class="text-center text-[#D4A017] font-semibold">Bs. 280</td>
-                            <td class="text-center text-[#D4A017] font-semibold">Bs. 240</td>
+                        <tr>
+                            <td class="py-7 text-sm md:text-base font-medium text-white/90">Estudiantes</td>
+                            <td class="text-sm md:text-base text-right sm:pr-7"><span class="line-through text-white/50">Bs. 250</span><span class="pl-3 sm:pl-5 font-bold text-[#D4A017]"><span class="hidden sm:inline">Bs. </span>200</span></td>
                         </tr>
-                        <tr class="bg-white/10">
-                            <td class="py-7 font-medium">Early Bird Estudiantes</td>
-                            <td class="text-center text-[#D4A017] font-semibold">Bs. 200</td>
-                            <td class="text-center text-[#D4A017] font-semibold">Bs. 120</td>
+                        <tr>
+                            <td class="py-7 text-sm md:text-base font-medium text-white/90">Estudiantes <br class="sm:hidden">(modalidad <span class="font-bold">virtual</span>)</td>
+                            <td class="text-sm md:text-base text-right sm:pr-7"><span class="line-through text-white/50">Bs. 150</span><span class="pl-3 sm:pl-5 font-bold text-[#D4A017]"><span class="hidden sm:inline">Bs. </span>120</span></td>
                         </tr>
                     </tbody>
                 </table>
                 
                 <div class="mt-12 text-center">
                     <button onclick="window.location.href='./pages/enrollment.html'" 
-                            class="bg-gradient-to-r from-[#D4A017] to-amber-500 hover:from-amber-400 hover:to-yellow-400 text-[#0A3D4A] px-16 py-6 rounded-3xl text-xl font-semibold transition-all">
+                            class="bg-gradient-to-r from-[#D4A017] to-amber-500 hover:from-amber-400 hover:to-yellow-400 text-[#0A3D4A] px-8 sm:px-16 py-6 rounded-3xl text-base md:text-xl font-semibold transition-all">
                         Completar Registro
                     </button>
                 </div>
